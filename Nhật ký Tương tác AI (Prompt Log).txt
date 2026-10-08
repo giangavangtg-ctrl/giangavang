@@ -1,6 +1,0 @@
-Nhật ký tương tác AI (Prompt Log)
-1.	Tối ưu kiểu dữ liệu tài chính: "Tại sao không nên dùng FLOAT cho các cột tiền tệ như security_deposit hay damage_fee? Hãy giải thích cơ chế sai số làm tròn của FLOAT và cho tôi biết cú pháp khởi tạo kiểu DECIMAL(10,2) trong MySQL."
-2.	Thiết kế quan hệ (1-1 vs 1-N): "Nghiệp vụ yêu cầu mỗi lần khách trả xe đều phải có một Biên bản kiểm tra. Vậy tôi nên đặt quan hệ giữa bảng Rentals và Inspections là 1-1 hay 1-N? Việc tách thành bảng riêng mang lại lợi ích gì so với việc thêm cột damage_note thẳng vào bảng Rentals?"
-3.	Xử lý giá trị rỗng (NULL) khi tính toán: "Trong câu lệnh SELECT tính tiền hoàn lại (Refund = Deposit - Late Fee - Damage Fee), nếu cột late_fee chưa được cập nhật và mang giá trị NULL, phép trừ sẽ ra kết quả NULL. Làm cách nào để ép các giá trị NULL về 0 trong phép toán này trên MySQL?"
-4.	Khóa bảo vệ bằng Trigger: "Nếu tôi muốn chặn đứng việc nhân viên cố tình INSERT dữ liệu vào bảng Inspections khi hợp đồng ở bảng Rentals vẫn đang mang trạng thái 'BOOKED', tôi phải viết lệnh Trigger trong MySQL như thế nào?"
-
