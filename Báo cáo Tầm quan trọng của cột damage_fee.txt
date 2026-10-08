@@ -1,4 +1,0 @@
-Báo cáo: Tầm quan trọng của cột damage_fee đối với tính toàn vẹn hệ thống
-Trong quy trình cho thuê xe tự lái, rủi ro phát sinh tổn thất tài sản (trầy xước, va quẹt) là cực kỳ cao. Phân tích Activity Diagram cho thấy, bước "Tính phí sửa chữa" là một chốt chặn bắt buộc trước khi hoàn tiền.
-Nếu CSDL thiếu cột damage_fee (như trong thiết kế Legacy), hệ thống sẽ gãy đổ hoàn toàn ở khâu đối soát tài chính. Nhân viên vận hành sẽ bị ép vào thế phải trả đủ 100% tiền cọc cho khách, hoặc phải ghi chép sổ tay bên ngoài hệ thống. Điều này dẫn đến 3 hậu quả: (1) Thất thoát doanh thu đền bù của công ty, (2) Kế toán không có chứng từ điện tử để khớp sổ, và (3) Ứng dụng quản lý trở nên vô dụng ở bước quan trọng nhất. Do đó, việc ánh xạ chính xác cột damage_fee kiểu DECIMAL vào bảng Rentals là bắt buộc để duy trì tính toàn vẹn của quy trình nghiệp vụ và bảo vệ tài chính cho doanh nghiệp.
-
